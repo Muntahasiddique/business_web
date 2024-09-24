@@ -1,0 +1,1343 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 67vh;
+  /* Make the container take up the full viewport height */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(11, 19, 43, 0.7);
+
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+.main-img {
+
+
+  display: block;
+
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensure the image covers the entire container */
+}
+
+.hero-section {
+  background-color: transparent;
+  box-shadow: transparent;
+  border-radius: 8px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: absolute;
+  /* Change to absolute positioning */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Center the element */
+  z-index: 2;
+  max-width: 900px;
+  /* Ensure the hero section doesn't exceed this width */
+  width: 90%;
+  /* Ensure responsiveness */
+  color: white;
+}
+
+.h5,
+h5 {
+  font-size: 1rem;
+}
+
+.h1,
+h1 {
+  font-size: calc(3.375rem + 1.5vw);
+}
+
+.hero-btn1,
+.hero-btn2 {
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 18px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 21px;
+}
+
+.hero-btn1 {
+  border: #1CB6F3;
+  background-color: rgb(28, 182, 243);
+}
+
+.hero-btn1:hover {
+  background-color: rgb(31, 183, 243);
+  /* Lighter blue background on hover */
+  color: black;
+  /* White text color on hover */
+  transition: all 0.5s ease-out;
+  /* Smooth transition for all properties */
+  font-family: 'Nunito', sans-serif;
+  /* Font family */
+  font-weight: 600;
+  /* Font weight */
+}
+
+.hero-btn2:hover {
+  background-color: white;
+  /* Lighter blue background on hover */
+  color: black;
+  /* White text color on hover */
+  transition: all 0.5s ease-out;
+  /* Smooth transition for all properties */
+  font-family: 'Nunito', sans-serif;
+  /* Font family */
+  font-weight: 600;
+  /* Font weight */
+}
+
+/* ----------------\Latest Blog---------------------------------------------------------- */
+
+.Blog-Pricing {
+  margin-top: 99px;
+}
+
+.Blog-pricing-container {
+  width: 100%;
+  padding: 39px;
+}
+
+.Blog-pricing-header {
+
+  padding: 0px 0px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-content-a-1 i {
+  padding-bottom: 8px;
+}
+
+
+
+
+.blog-content-a {
+  display: flex;
+  gap: 20px;
+}
+
+.blog-content-a-1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* Adds space between icon and text */
+}
+
+.Blog-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows wrapping to new lines if needed */
+  align-items: stretch;
+  /* Ensures all items stretch to the same height */
+  justify-content: space-between;
+  /* Space between each blog box */
+  gap: 20px;
+  /* Adds consistent space between each box */
+}
+
+.Blog-box1 {
+  background-color: rgb(193, 226, 226);
+  flex: 1 1 30%;
+  /* Flex-grow, flex-shrink, and flex-basis */
+  box-sizing: border-box;
+
+  margin: 10px 0;
+  /* Margin for top and bottom spacing */
+  z-index: 2;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Space out content evenly */
+  height: 100%;
+  /* Ensure all boxes have equal height */
+}
+
+.blog-img img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+  /* Smooth transition for the zoom effect */
+}
+
+.blog-img img:hover {
+  transform: scale(1.1);
+  /* Slight zoom effect */
+}
+
+.blog-content {
+
+  flex-direction: column;
+  justify-content: space-between;
+  /* Space out content evenly */
+  height: 100%;
+  /* Ensure all content fills the height */
+  padding: 23px;
+}
+
+.blog-content h3 {
+  margin: 6px 0;
+  /* Margin for spacing */
+}
+
+.blog-content p {
+  flex-grow: 1;
+  /* Allow paragraph to grow and fill available space */
+}
+
+.blog-content a {
+  display: inline-block;
+
+  text-decoration: none;
+  color: #1CB6F3;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.blog-content a:hover {
+  color: #0e7abf;
+}
+
+.blog-content .fa-arrow-right-long {
+  margin-left: 10px;
+}
+
+.blog-img {
+  position: relative;
+  /* Make the container relative */
+}
+
+.blog-img a {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background-color: #1cb6f3;
+  padding: 5px 10px;
+
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease-in;
+}
+
+
+.blog-img a:hover {
+  color: #0e7abf;
+}
+
+/* blog 3rd feild  */
+.search-container {}
+
+.search-container {
+  display: flex;
+}
+
+.blog-3containers {
+  display: flex;
+}
+
+.Blog-boxes {
+  display: flex;
+
+  justify-content: space-between;
+  /* Space between each blog box */
+  gap: 20px;
+  /* Adds consistent space between each box */
+  flex: 5;
+}
+
+.Blog-box1 {
+  background-color: rgb(193, 226, 226);
+  flex: 1 1 calc(50% - 20px);
+  /* Each box will take up approximately 50% of the container minus the gap */
+  box-sizing: border-box;
+  margin: 10px 0;
+  /* Margin for top and bottom spacing */
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Space out content evenly */
+  height: 18%;
+}
+
+.search-container {
+  display: flex;
+  /* Use flexbox to control layout */
+  width: 100%;
+  /* Make sure the container takes full width */
+}
+
+.input-blog {
+  flex-grow: 1;
+  /* Allow the input field to take up available space */
+}
+
+.input-blog input {
+  width: 100%;
+  /* Ensure the input field takes full width of its parent */
+  padding: 19px;
+  padding-right: 40px;
+  /* Space for the icon */
+  border-radius: 0px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  /* Include padding and border in the element's width */
+}
+
+.serach-blog i {
+  background-color: #51a3d6;
+  padding: 21px;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  /* Adds a pointer cursor to indicate interactivity */
+  display: flex;
+  align-items: center;
+  /* Center the icon vertically */
+  justify-content: center;
+  /* Center the icon horizontally */
+}
+
+.third-feild {
+  width: 100%;
+  margin-top: 11px;
+  PADDING: 0PX 9PX;
+  PADDING-LEFT: 49px;
+  box-sizing: border-box;
+  /* display: flex;
+  flex-direction: column; */
+  flex: 2;
+}
+
+.catagories-ancher {
+  display: flex;
+  flex-direction: column;
+}
+
+.catagories-ancher {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* Adds space between each link */
+  margin-top: 20px;
+  /* Adds space above the links */
+}
+
+.catagories-ancher a {
+  font-size: 20px;
+  /* Increases the font size */
+  color: #1f2224;
+  /* Sets a primary color for the text */
+  text-decoration: none;
+  /* Removes underline */
+  padding: 0px 0px;
+  /* Adds padding around the text */
+  border-radius: 0px;
+  /* Rounds the corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Smooth transition for hover effect */
+  display: flex;
+  align-items: center;
+  /* Centers the text and icon vertically */
+  background-color: rgb(193, 226, 226);
+  padding-left: 13px;
+
+}
+
+.catagories-ancher a:hover {
+  color: #1CB6F3;
+  /* Changes text color on hover */
+}
+
+.catagories-ancher i {
+  margin-right: 10px;
+  /* Adds space between the icon and the text */
+  font-size: 18px;
+  /* Adjusts the size of the icon */
+}
+
+.catagories {
+  padding-top: 39px;
+}
+
+.recent-post-img-1 {
+  display: flex;
+}
+
+.recent-post-img-1 img {
+  width: 75px;
+  height: 75px;
+  border-radius: 8px;
+}
+
+.recent-post-img {
+  margin-bottom: 20px;
+  /* Adds space below the post image */
+  padding-top: 32px;
+}
+
+.recent-post-img-1 {
+  display: flex;
+  border-radius: 0px;
+  margin-bottom: 19px;
+}
+
+.recent-post-img-1 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0px;
+  /* Rounds the corners of the image */
+  object-fit: cover;
+  /* Ensures the image covers the entire space without distortion */
+}
+
+.recent-post-img-1 p {
+  margin: 0;
+  color: #0B132B;
+  font-size: 15px;
+
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 9px;
+  background-color: rgb(193, 226, 226);
+  ;
+
+
+}
+
+.Recent-Post {
+  padding-top: 66px;
+}
+
+.blog-pic {
+  padding-top: 41px;
+  text-align: center;
+  /* Center the image horizontally */
+}
+
+.blog-pic img {
+  object-fit: cover;
+  width: 100%;
+  /* Ensure the image takes the full width of its container */
+  height: auto;
+  /* Maintain the aspect ratio */
+  max-width: 500px;
+  /* Set a max-width to prevent the image from growing too large */
+
+  display: block;
+  /* Ensures the image behaves like a block element */
+}
+
+.Cloud {
+  padding-top: 33px;
+}
+
+.cloud-ancher {
+  display: flex;
+  /* Aligns items in a row */
+  flex-wrap: wrap;
+  /* Allows items to wrap to the next line */
+  gap: 10px;
+  /* Creates space between each link */
+  padding-top: 17px;
+}
+
+.cloud-ancher a {
+  color: #1f2224;
+  /* Primary text color */
+  text-decoration: none;
+  /* Removes underline */
+  background-color: rgb(193, 226, 226);
+  /* Light background color */
+  padding: 8px 12px;
+  /* Padding inside each link */
+  border-radius: 1px;
+  /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth transitions */
+  font-size: 16px;
+  /* Increases font size */
+}
+
+.cloud-ancher a:hover {
+  background-color: rgb(163, 196, 196);
+  /* Slightly darker background on hover */
+  transform: translateY(-2px);
+  /* Moves the link up slightly on hover */
+}
+
+.cloud-ancher a:active {
+  transform: translateY(0);
+  /* Resets transform when active (clicked) */
+  background-color: rgb(133, 166, 166);
+  /* Even darker background when clicked */
+}
+
+.Plain {
+  padding-top: 33px;
+  /* Adds padding at the top of the section */
+  /* Centers the content within the Plain div */
+}
+
+.Plain-para {
+  margin-top: 33px;
+  /* Adds margin at the top of the paragraph section */
+  background-color: rgb(163, 196, 196);
+  padding: 20px;
+  /* Adds padding around the paragraph */
+  text-align: center;
+
+}
+
+.Plain-para p {
+  font-size: 16px;
+  /* Sets font size for the paragraph text */
+  line-height: 1.6;
+  /* Increases line height for better readability */
+  color: #333;
+  /* Sets color for the paragraph text */
+}
+
+.Plain-para a {
+  padding: 12px 34px;
+  /* Padding inside the anchor tag */
+  font-size: 15px;
+  /* Font size for the anchor tag */
+  cursor: pointer;
+  /* Changes cursor to pointer when hovering */
+  background-color: #1CB6F3;
+  /* Background color for the anchor tag */
+  text-decoration: none;
+  /* Removes underline from anchor tag */
+  color: #fff;
+  /* Text color for the anchor tag */
+  margin-top: 20px;
+  /* Margin at the top of the anchor tag */
+  border: none;
+  /* Removes border */
+  border-radius: 4px;
+  /* Rounds corners of the anchor tag */
+  display: inline-block;
+  /* Makes the anchor tag behave like a block element */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Adds smooth transition for hover effects */
+}
+
+.Plain-para a:hover {
+  background-color: #0d9fdb;
+  /* Darkens the background on hover */
+  transform: translateY(-2px);
+  /* Slightly lifts the button on hover */
+}
+
+.numb-div {
+  display: flex;
+  justify-content: center;
+  /* Centers the pagination items horizontally */
+  align-items: center;
+  /* Vertically aligns the items */
+  margin-top: 20px;
+  /* Adds space above the pagination */
+}
+
+.numb-div a,
+.numb-div i {
+
+  padding: 10px 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1cb6f3;
+  /* Dark color for the pagination numbers */
+  /* Light background color for the numbers */
+  border: 0.01px solid rgb(216, 212, 212);
+  /* Adds a border around each element */
+  border-radius: 0px;
+  /* Adds rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  /* Smooth transition for hover effects */
+}
+
+.numb-div a:hover,
+.numb-div i:hover {
+  background-color: #1CB6F3;
+  /* Changes the background color on hover */
+  color: #fff;
+  /* Changes the text color on hover */
+  border-color: #1CB6F3;
+  /* Changes the border color on hover */
+}
+
+.numb-div i {
+  font-size: 30px;
+  cursor: pointer;
+  color: #1cb6f3;
+}
+
+.numb-div a.active {
+  background-color: #1CB6F3;
+  /* Highlights the active page number */
+  color: #fff;
+  font-weight: bold;
+  border-color: #1CB6F3;
+  /* Changes the border color for active state */
+}
+
+
+
+
+/* -----------------maedia query ----------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------*/
+@media (max-width:1007px) {
+  .choose-upper {
+    padding: 0px;
+  }
+
+}
+
+@media (max-width:976px) {
+  .first-div {
+    display: none;
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  .nav-button {
+    display: block;
+    height: 5.5rem;
+    width: 79px;
+    padding: 0px 4px;
+  }
+
+  .serach-icon {
+
+    padding: 9px;
+    padding-top: 38px;
+    margin-right: 0px;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  .ending-boxes-sec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Our-Ending-startup {
+    width: 39%;
+
+    padding-top: 283px;
+    font-size: 17px;
+  }
+
+  .footer {
+    padding: 16px 11px;
+    padding-left: 391px;
+
+  }
+
+  .footer-inner {
+    gap: 0px;
+  }
+
+  .footer-inner-b {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 968px) {
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    max-width: 742px;
+    /* top: 969px */
+    top: 160%;
+  }
+
+  .about {
+    margin-top: 645px;
+  }
+
+  .pricing-boxes {
+    flex-direction: column;
+
+  }
+
+  .pric-box1,
+  .pric-box2 {
+    width: 83%;
+  }
+
+  .pric-btn {
+    align-self: flex-start;
+  }
+
+  .pric-content {
+    justify-content: flex-start;
+
+  }
+
+  .pric-box1 {
+
+    text-align: left;
+  }
+
+  .pric-box2 {
+
+
+
+    text-align: left;
+  }
+
+  .Request-Us-Quote {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .team-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-3containers {
+    flex-direction: column;
+  }
+
+  .Blog-pricing-container {
+    padding: 39px 112px;
+  }
+
+  .Blog-boxes {
+    flex-direction: row;
+  }
+
+  .third-feild {
+    PADDING-LEFT: 0px;
+  }
+
+  .recent-post-img-1 p {
+    padding: 27px 6px;
+  }
+
+  .blog-pic img {
+    max-width: 79%;
+    height: auto;
+  }
+
+}
+
+@media (max-width:932px) {
+  .ending-boxes {
+    flex-direction: column;
+    padding: 0px 34px;
+  }
+
+  .Our-Ending-startup {
+    width: 100%;
+    padding-top: 0px;
+    font-size: 1rem;
+    margin-bottom: 0px;
+  }
+
+  .Our-Ending-links {
+    padding: 0px;
+  }
+
+  .footer {
+    padding: 0px 0px;
+    padding-left: 34px;
+  }
+}
+
+
+
+
+@media (max-width: 887px) {
+  .navbar {
+    background-color: white;
+    border: none;
+  }
+
+  .logo {
+    color: #1CB6F3;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  .nav-div1 {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    align-items: flex-start;
+   
+  }
+
+
+  .nav-divupper {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-divupper.open {
+    display: flex;
+  }
+
+  .nav-div1 a {
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    color: #0B132B;
+    padding: 10px 0;
+  }
+
+  .nav-button {
+    height: 5.5rem;
+    width: 200px;
+    padding: 0px 4px;
+    color: #ffffff;
+    border: none;
+    background-color: rgb(28, 182, 243);
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 11px 9px;
+    border-radius: 3px;
+    margin-left: 10px;
+    height: 2.5rem;
+    margin-top: 4px;
+    align-items: center;
+  }
+
+  .serach-icon {
+    padding: 14px;
+    padding-top: 10px;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    padding: 39px;
+
+  }
+  .four-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .boxes-a1 {
+    flex-direction: column;
+  }
+
+  .Our-Vendors {
+    width: 90%;
+    padding: 39px;
+    padding-left: 70px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+
+  .nav-div1>div .dropdown-content-1 {
+    margin-top: 0px;
+  }
+  .nav-div1 a {
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    color: #0B132B;
+    padding: 10px 0;
+  }
+  .nav-div1 a{
+    padding: 5px 0px;
+  }
+  .nav-div1 > div .dropdown-content-1{
+  font-size: 14px;
+  }
+  .nav-div1{
+    font-size: 16px;
+  }
+  .Blog-Pricing{
+    margin-top: 44px;
+  }
+
+}
+
+@media (max-width:783px) {
+  .services-small-box {
+    width: 539px;
+    height: 236px;
+  }
+
+  .hero-section h1 {
+    font-size: 37px;
+  }
+
+  .hero-btn1,
+  .hero-btn2 {
+    font-size: 14px;
+    padding: 3px 14px;
+  }
+}
+
+@media (max-width:724px) {
+  .Blog-boxes {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:724px) {
+  .blog-pic img {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width:687px) {}
+
+@media (max-width:593px) {
+  .Our-Vendors {
+    width: 90%;
+    padding: 39px;
+    padding-left: 70px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .footer {
+    padding: 0px 0px;
+    padding-left: 34px;
+    font-size: 9px;
+  }
+
+  .recent-post-img-1 p {
+    padding: 16px 6px;
+  }
+}
+@media (max-width: 480px) {
+
+  /* Extra small screens */
+  .Blog-pricing-container {
+    padding: 39px 59px;
+  }
+
+}
+
+@media (max-width:375px) {
+  .service-font {
+    width: 34px;
+    padding: 6px;
+  }
+
+  .Services-box {
+    padding: 0px;
+  }
+}
+
+@media (max-width:382px) {
+  .recent-post-img-1 p {
+    padding: 6px 2px;
+    font-size: 12px;
+  }
+
+
+}
+
+@media (max-width:335px) {
+
+  .about-us h2 {
+    font-size: 25px;
+  }
+
+  .Request-Us-upper h2 {
+    font-size: 25px;
+  }
+
+  .price-currency {
+    font-size: 0.5em;
+    /* Smaller font size */
+
+  }
+
+  .price-period {
+    font-size: 0.3em;
+
+  }
+
+  .pric-box1-b h2 {
+    font-size: 27px;
+  }
+
+  .Request-Us-block-a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Request-major-form {
+    padding: 0px;
+  }
+
+  .service-font {
+    width: 37px;
+    padding: 7px;
+  }
+
+  .services-small-box {
+    padding: 0px;
+  }
+
+  .Blog-pricing-container {
+    padding: 43px 57px;
+  }
+
+  .Blog-pricing-container {
+    padding: 39px 25px;
+  }
+
+}
+
+@media (max-width:307px) {
+  .hero-section h1 {
+    font-size: 40px;
+  }
+
+  .hero-section h5 {
+    font-size: 10px;
+  }
+
+  .footer {
+    padding: 0px 0px;
+    padding-left: 34px;
+    font-size: 5px;
+  }
+
+  .services-small-box {
+    padding: 6px;
+    justify-content: center;
+  }
+
+  .service-font {
+
+    width: 29px;
+    padding: 3px;
+
+
+  }
+
+  .services-small-box h4 {
+    margin: 21px;
+    font-size: 16px;
+  }
+
+  .Our-Services {
+    padding: 10px;
+  }
+
+  .blank-div {
+    width: 96px;
+  }
+
+  .blank-div-2 {
+    width: 106px;
+    margin-top: 9px;
+  }
+
+  .about-us {
+    padding: 19px;
+  }
+
+  .choose {
+    padding: 19px;
+  }
+
+  .Our-pricing {
+    padding: 3px;
+  }
+
+  .Request-Us-Quote {
+    padding: 10px;
+  }
+
+  .ending-boxes {
+    padding: 0px;
+  }
+
+  .hero-section h1 {
+    font-size: 16px;
+  }
+
+  .hero-section h5 {
+    font-size: 6px;
+  }
+
+  .hero-section {
+    margin-top: 30px;
+  }
+
+  .nav-div1 a {
+    font-size: 14px;
+  }
+  .Blog-pricing-container{
+    padding: 39px 9px;
+  }
+
+}
+
+@media (max-width:263px) {}
+
+@media (max-width:256px) {
+
+  .font-div,
+  .font-div-2 {
+    margin: 8px;
+  }
+
+  .inner-content h4,
+  h2 {
+    font-size: 11px;
+  }
+
+  .inner-content2 h4,
+  h2 {
+    font-size: 11px;
+  }
+
+  .team-location-social-media a {
+
+
+
+    font-size: 15px;
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+    background-color: #1CB6F3;
+    padding: 7px;
+  }
+
+  .Our-Vendors {
+    width: 90%;
+    padding: 20px;
+    padding-left: 35px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .services-small-box p {
+    font-size: 13px;
+  }
+
+  .hero-section h1 {
+    font-size: 12px;
+  }
+
+  .hero-section h5 {
+    font-size: 5px;
+  }
+
+  .hero-section {
+    margin-top: 35px;
+    padding: 2px;
+  }
+
+  .boxes {
+    top: 80%;
+  }
+  .numb-div a{
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+.numb-div i{
+    font-size: 9px;
+    padding: 6px 13px;
+  }
+  .catagories-ancher a{
+    font-size:13px
+  }
+
+
+}
+
+@media (max-width:272px) {
+  .nav-button {
+    font-size: 0.6rem;
+  }
+  .recent-post-img-1 img{
+    width: 73px;
+    height: 68px;
+  }
+
+}
+
+
+@media (max-width:226px) {
+  .hero-section h1 {
+    font-size: 5px;
+  }
+  
+
+  .hero-section h5 {
+    font-size: 2px;
+  }
+
+  .hero-section {
+    margin-top: 75px;
+    padding: 5px;
+  }
+
+  .hero-btn1,
+  .hero-btn2 {
+    margin-top: 6px;
+    font-size: 14px;
+    padding: 1px 13px;
+  }
+.logo{
+  
+font-size: 1.5rem;
+}
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 769px) {
+  .carousel-container {
+    height: 75vh;
+    /* Adjust height for medium screens */
+  }
+
+  .boxes {
+    top: 125%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    /* height: 50vh; */
+    height: 68vh;
+    /* Adjust height for small screens */
+  }
+
+  .hero-section h1 {
+    font-size: 20px;
+  }
+
+  .hero-section h5 {
+    font-size: 9px;
+  }
+
+  .hero-section {
+    margin-top: 23px;
+  }
+
+  .boxes {
+    top: 114%;
+
+
+  }
+
+  .about {
+    margin-top: 620px;
+  }
+}
+
+/* Media Queries for --------------testimonial */
+@media (max-width: 1200px) {
+
+  /* Adjust padding for medium-sized screens */
+  .testimonial-section {
+    padding: 30px;
+    /* Reduce padding */
+  }
+
+  /* Adjust slide width for medium-sized screens */
+  .swiper-slide {
+    width: calc(100% / 2);
+    /* Each slide takes up 1/2 of the container */
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Adjust padding for small screens */
+  .testimonial-section {
+    padding: 20px;
+    /* Further reduce padding */
+  }
+
+  /* Adjust slide width for small screens */
+  .swiper-slide {
+    width: 100%;
+    /* Each slide takes full width */
+  }
+
+  /* Optional: Adjust image size for smaller screens */
+  .testimonial-img img {
+    width: 50px;
+    /* Smaller image size */
+    height: 50px;
+    /* Smaller image size */
+  }
+}
+
+@media (max-width: 887px) {
+
+
+
+  .nav-divupper {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-divupper.open {
+    display: flex;
+  }
+
+
+}

@@ -1,0 +1,152 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67vh;
+    /* Make the container take up the full viewport height */
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(11, 19, 43, 0.7);
+  
+  
+    width: 100%;
+    height: 100%;
+  
+    z-index: 1;
+  }
+  
+  .main-img {
+  
+  
+    display: block;
+  
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
+  }
+  
+  .hero-section {
+    background-color: transparent;
+    box-shadow: transparent;
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: absolute;
+    /* Change to absolute positioning */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the element */
+    z-index: 2;
+    max-width: 900px;
+    /* Ensure the hero section doesn't exceed this width */
+    width: 90%;
+    /* Ensure responsiveness */
+    color: white;
+  }
+  
+  .h5,
+  h5 {
+    font-size: 1rem;
+  }
+  
+  .h1,
+  h1 {
+    font-size: calc(3.375rem + 1.5vw);
+  }
+  
+  .hero-btn1,
+  .hero-btn2 {
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 21px;
+  }
+  
+  .hero-btn1 {
+    border: #1CB6F3;
+    background-color: rgb(28, 182, 243);
+  }
+  
+  .hero-btn1:hover {
+    background-color: rgb(31, 183, 243);
+    /* Lighter blue background on hover */
+    color: black;
+    /* White text color on hover */
+    transition: all 0.5s ease-out;
+    /* Smooth transition for all properties */
+    font-family: 'Nunito', sans-serif;
+    /* Font family */
+    font-weight: 600;
+    /* Font weight */
+  }
+  
+  .hero-btn2:hover {
+    background-color: white;
+    /* Lighter blue background on hover */
+    color: black;
+    /* White text color on hover */
+    transition: all 0.5s ease-out;
+    /* Smooth transition for all properties */
+    font-family: 'Nunito', sans-serif;
+    /* Font family */
+    font-weight: 600;
+    /* Font weight */
+  }
+
+
+  @media (max-width:276px) {
+  
+        .logo {
+            font-size: 1.5rem;
+        }
+    
+    }
+    @media (max-width: 887px) {
+
+
+
+      .nav-divupper {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .nav-divupper.open {
+        display: flex;
+      }
+      .nav-div1 a {
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        color: #0B132B;
+        padding: 10px 0;
+      }
+      .nav-div1 a{
+        padding: 5px 0px;
+      }
+      .nav-div1 > div .dropdown-content-1{
+      font-size: 14px;
+      }
+      .nav-div1{
+        font-size: 16px;
+      }
+    
+    
+    }

@@ -1,0 +1,735 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67vh;
+    /* Make the container take up the full viewport height */
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(11, 19, 43, 0.7);
+  
+  
+    width: 100%;
+    height: 100%;
+  
+    z-index: 1;
+  }
+  
+  .main-img {
+  
+  
+    display: block;
+  
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
+  }
+  
+  .hero-section {
+    background-color: transparent;
+    box-shadow: transparent;
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: absolute;
+    /* Change to absolute positioning */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the element */
+    z-index: 2;
+    max-width: 900px;
+    /* Ensure the hero section doesn't exceed this width */
+    width: 90%;
+    /* Ensure responsiveness */
+    color: white;
+  }
+  
+  .h5,
+  h5 {
+    font-size: 1rem;
+  }
+  
+  .h1,
+  h1 {
+    font-size: calc(3.375rem + 1.5vw);
+  }
+  
+  .hero-btn1,
+  .hero-btn2 {
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 21px;
+  }
+  
+  .hero-btn1 {
+    border: #1CB6F3;
+    background-color: rgb(28, 182, 243);
+  }
+  
+  .hero-btn1:hover {
+    background-color: rgb(31, 183, 243);
+    /* Lighter blue background on hover */
+    color: black;
+    /* White text color on hover */
+    transition: all 0.5s ease-out;
+    /* Smooth transition for all properties */
+    font-family: 'Nunito', sans-serif;
+    /* Font family */
+    font-weight: 600;
+    /* Font weight */
+  }
+  
+  .hero-btn2:hover {
+    background-color: white;
+    /* Lighter blue background on hover */
+    color: black;
+    /* White text color on hover */
+    transition: all 0.5s ease-out;
+    /* Smooth transition for all properties */
+    font-family: 'Nunito', sans-serif;
+    /* Font family */
+    font-weight: 600;
+    /* Font weight */
+  }
+
+  /*------------------------------------------------------------------ blog-detail---------------------- */
+  .search-container {
+    display: flex;
+    /* Use flexbox to control layout */
+    width: 100%;
+    /* Make sure the container takes full width */
+  }
+  
+  .input-blog {
+    flex-grow: 1;
+    /* Allow the input field to take up available space */
+  }
+  
+  .input-blog input {
+    width: 100%;
+    /* Ensure the input field takes full width of its parent */
+    padding: 19px;
+    padding-right: 40px;
+    /* Space for the icon */
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    /* Include padding and border in the element's width */
+  }
+  
+  .serach-blog i {
+    background-color: #51a3d6;
+    padding: 21px;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    /* Adds a pointer cursor to indicate interactivity */
+    display: flex;
+    align-items: center;
+    /* Center the icon vertically */
+    justify-content: center;
+    /* Center the icon horizontally */
+  }
+  
+  .third-feild {
+    width: 100%;
+    margin-top: 11px;
+    PADDING: 0PX 9PX;
+    PADDING-LEFT: 49px;
+    box-sizing: border-box;
+    /* display: flex;
+    flex-direction: column; */
+    flex: 2;
+  }
+  
+  .catagories-ancher {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .catagories-ancher {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Adds space between each link */
+    margin-top: 20px;
+    /* Adds space above the links */
+  }
+  
+  .catagories-ancher a {
+    font-size: 20px;
+    /* Increases the font size */
+    color: #1f2224;
+    /* Sets a primary color for the text */
+    text-decoration: none;
+    /* Removes underline */
+    padding: 0px 0px;
+    /* Adds padding around the text */
+    border-radius: 0px;
+    /* Rounds the corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition for hover effect */
+    display: flex;
+    align-items: center;
+    /* Centers the text and icon vertically */
+    background-color: rgb(193, 226, 226);
+    padding-left: 13px;
+  
+  }
+  
+  .catagories-ancher a:hover {
+    color: #1CB6F3;
+    /* Changes text color on hover */
+  }
+  
+  .catagories-ancher i {
+    margin-right: 10px;
+    /* Adds space between the icon and the text */
+    font-size: 18px;
+    /* Adjusts the size of the icon */
+  }
+  
+  .catagories {
+    padding-top: 39px;
+  }
+  
+  .recent-post-img-1 {
+    display: flex;
+  }
+  
+  .recent-post-img-1 img {
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+  }
+  
+  .recent-post-img {
+    margin-bottom: 20px;
+    /* Adds space below the post image */
+    padding-top: 32px;
+  }
+  
+  .recent-post-img-1 {
+    display: flex;
+    border-radius: 0px;
+    margin-bottom: 19px;
+  }
+  
+  .recent-post-img-1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
+    /* Rounds the corners of the image */
+    object-fit: cover;
+    /* Ensures the image covers the entire space without distortion */
+  }
+  
+  .recent-post-img-1 p {
+    margin: 0;
+    color: #0B132B;
+    font-size: 15px;
+  
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 9px;
+    background-color: rgb(193, 226, 226);
+    
+  
+  
+  }
+  
+  .Recent-Post {
+    padding-top: 66px;
+  }
+  
+  .blog-pic {
+    padding-top: 41px;
+    text-align: center;
+    /* Center the image horizontally */
+  }
+  
+  .blog-pic img {
+    object-fit: cover;
+    width: 100%;
+    /* Ensure the image takes the full width of its container */
+    height: auto;
+    /* Maintain the aspect ratio */
+    max-width: 500px;
+    /* Set a max-width to prevent the image from growing too large */
+  
+    display: block;
+    /* Ensures the image behaves like a block element */
+  }
+  
+  .Cloud {
+    padding-top: 33px;
+  }
+  
+  .cloud-ancher {
+    display: flex;
+    /* Aligns items in a row */
+    flex-wrap: wrap;
+    /* Allows items to wrap to the next line */
+    gap: 10px;
+    /* Creates space between each link */
+    padding-top: 17px;
+  }
+  
+  .cloud-ancher a {
+    color: #1f2224;
+    /* Primary text color */
+    text-decoration: none;
+    /* Removes underline */
+    background-color: rgb(193, 226, 226);
+    /* Light background color */
+    padding: 8px 12px;
+    /* Padding inside each link */
+    border-radius: 1px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Smooth transitions */
+    font-size: 16px;
+    /* Increases font size */
+  }
+  
+  .cloud-ancher a:hover {
+    background-color: rgb(163, 196, 196);
+    /* Slightly darker background on hover */
+    transform: translateY(-2px);
+    /* Moves the link up slightly on hover */
+  }
+  
+  .cloud-ancher a:active {
+    transform: translateY(0);
+    /* Resets transform when active (clicked) */
+    background-color: rgb(133, 166, 166);
+    /* Even darker background when clicked */
+  }
+  
+  .Plain {
+    padding-top: 33px;
+    /* Adds padding at the top of the section */
+    /* Centers the content within the Plain div */
+  }
+  
+  .Plain-para {
+    margin-top: 33px;
+    /* Adds margin at the top of the paragraph section */
+    background-color: rgb(163, 196, 196);
+    padding: 20px;
+    /* Adds padding around the paragraph */
+    text-align: center;
+  
+  }
+  
+  .Plain-para p {
+    font-size: 16px;
+    /* Sets font size for the paragraph text */
+    line-height: 1.6;
+    /* Increases line height for better readability */
+    color: #333;
+    /* Sets color for the paragraph text */
+  }
+  
+  .Plain-para a {
+    padding: 12px 34px;
+    /* Padding inside the anchor tag */
+    font-size: 15px;
+    /* Font size for the anchor tag */
+    cursor: pointer;
+    /* Changes cursor to pointer when hovering */
+    background-color: #1CB6F3;
+    /* Background color for the anchor tag */
+    text-decoration: none;
+    /* Removes underline from anchor tag */
+    color: #fff;
+    /* Text color for the anchor tag */
+    margin-top: 20px;
+    /* Margin at the top of the anchor tag */
+    border: none;
+    /* Removes border */
+    border-radius: 4px;
+    /* Rounds corners of the anchor tag */
+    display: inline-block;
+    /* Makes the anchor tag behave like a block element */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Adds smooth transition for hover effects */
+  }
+  
+  .Plain-para a:hover {
+    background-color: #0d9fdb;
+    /* Darkens the background on hover */
+    transform: translateY(-2px);
+    /* Slightly lifts the button on hover */
+  }
+  
+  .numb-div {
+    display: flex;
+    justify-content: center;
+    /* Centers the pagination items horizontally */
+    align-items: center;
+    /* Vertically aligns the items */
+    margin-top: 20px;
+    /* Adds space above the pagination */
+  }
+  
+  .numb-div a,
+  .numb-div i {
+  
+    padding: 10px 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #1cb6f3;
+    /* Dark color for the pagination numbers */
+    /* Light background color for the numbers */
+    border: 0.01px solid rgb(216, 212, 212);
+    /* Adds a border around each element */
+    border-radius: 0px;
+    /* Adds rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    /* Smooth transition for hover effects */
+  }
+  
+  .numb-div a:hover,
+  .numb-div i:hover {
+    background-color: #1CB6F3;
+    /* Changes the background color on hover */
+    color: #fff;
+    /* Changes the text color on hover */
+    border-color: #1CB6F3;
+    /* Changes the border color on hover */
+  }
+  
+  .numb-div i {
+    font-size: 30px;
+    cursor: pointer;
+    color: #1cb6f3;
+  }
+  
+  .numb-div a.active {
+    background-color: #1CB6F3;
+    /* Highlights the active page number */
+    color: #fff;
+    font-weight: bold;
+    border-color: #1CB6F3;
+    /* Changes the border color for active state */
+  }
+  
+  /* new--------------------- */
+  .blog-detail-section{
+    margin-top: 39px;
+  }
+
+.blog-detail{
+    padding: 61px;
+}
+
+.blog-detail-2nddiv{
+    display: flex;
+  }
+  
+.blog-detail-first-section{
+flex: 4;
+}
+.third-feild{
+    flex: 2;
+}
+.blog-detail-img img{
+width: 100%;
+}
+.blog-detail-bold h1{
+    padding-top:46px ;
+    font-size: 40px;
+    padding-bottom: 14px;
+}
+
+.commentno1 {
+  display: flex;
+  margin-top: 20px;
+}
+
+.comment-img {
+  margin-right: 15px;
+}
+
+.comment-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-name {
+  font-weight: bold;
+  color: #1cb6f3;
+  text-decoration: none;
+}
+
+.comment-content a:hover {
+  color: #007bff;
+}
+
+.comment-content small {
+
+  color: #777;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.comment-content p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.reply-link {
+  color: #0B132B;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #d1e7f0;
+  font-weight: 300;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.reply-link:hover {
+  text-decoration: underline;
+}
+
+.comment {
+  margin-top: 50px;
+}
+
+.all-comments {
+  margin-top: 20px;
+}
+/* FORM---------------------------------------- */
+/* FORM---------------------------------------- */
+.Request-form {
+  display: block;
+  background-color: #dbf2fc;
+  color: #0B132B;
+  width: 100%;
+  height: auto;
+  padding: 42px;
+
+  margin-top: 50px;
+
+}
+
+.Request-form h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0B132B;
+}
+.Request-form-upper{
+  padding-bottom: 27px;
+
+}
+
+.Request-major-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+.Request-form-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 7px;
+}
+
+.Request-form-li {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input,
+select,
+textarea,
+.request-button {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid rgb(184, 184, 184);
+  padding: 0.75rem;
+  color: #333;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: #98cbe9;
+  color: #052538;
+  border-color: #052538;
+  outline: none;
+}
+
+.request-button {
+  color: #ffffff;
+  border: none;
+  background-color: #1cb6f3;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+}
+
+.request-button:hover {
+  background-color: #186b8b;
+}
+
+.hidden-label {
+  display: none;
+}
+
+
+/* -----------------------------media quesry================== */
+@media (max-width:976px) {
+
+  
+
+.blog-detail-2nddiv{
+  display: flex;
+  flex-direction: column;
+}
+.third-feild{
+  PADDING-LEFT: 0px;
+}
+
+
+
+}
+
+@media (max-width:436px) {
+  .request-button{
+    font-size: 15px;
+    padding: 1px;
+  }
+  .blog-detail{
+    padding: 37px;
+  }
+  .blog-detail-bold h1{
+font-size:31px ;
+  }
+  .Request-form{
+    padding: 11px;
+  }
+
+
+  
+  }
+
+  @media (max-width:304px) {
+  .blog-detail{
+    padding: 22px;
+  }
+
+    .recent-post-img-1 img{
+      width: 90px;
+      height: 90px
+    }
+    .recent-post-img-1 p{
+      font-size: 13px;
+      font-weight: 100;
+    }
+  
+  }
+  @media (max-width:235px) {
+    .recent-post-img-1 img{
+      width: 70px;
+      height: 70px
+    }
+    .recent-post-img-1 p{
+      font-size: 10px;
+      font-weight: 200;
+    }
+    .blog-detail{
+      padding: 11px;
+    }
+  }
+  @media (max-width:226px) {
+  .logo{
+  
+    font-size: 1.5rem;
+    }}
+    @media (max-width: 887px) {
+
+
+
+      .nav-divupper {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .nav-divupper.open {
+        display: flex;
+      }
+      .nav-div1 a {
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        color: #0B132B;
+        padding: 10px 0;
+      }
+      .nav-div1 a{
+        padding: 5px 0px;
+      }
+      .nav-div1 > div .dropdown-content-1{
+      font-size: 14px;
+      }
+      .nav-div1{
+        font-size: 16px;
+      }
+    
+    
+    }

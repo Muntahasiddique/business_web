@@ -1,0 +1,1011 @@
+:root {
+  
+  --primary: #0B132B;
+  /* Primary color */
+  --highlight-color: #1CB6F3;
+  /* Highlight color */
+}
+
+
+
+.first-child1-div {
+  display: inline;
+}
+
+.first-div {
+  width: 100%;
+  height: 44px;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  padding-top: 11px;
+  justify-content: space-between;
+  padding-right: 32px;
+  align-items: center;
+
+}
+
+.first-ul {
+  gap: 1rem;
+  display: flex;
+  font-size: small;
+}
+
+.first-li {
+  list-style: none;
+
+}
+
+.social-media {
+  display: inline;
+  font-size: 18px;
+  gap: 1px;
+
+}
+
+.social-media a {
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  /* Makes the border circular */
+  width: 30px;
+  /* Adjust width and height as needed */
+  height: 30px;
+  /* Adjust width and height as needed */
+  line-height: 30px;
+  /* Centers text vertically */
+  text-align: center;
+  /* Centers text horizontally */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  /* Removes underline by default on anchor tags */
+  display: inline-block;
+  /* Ensures the anchor tags are displayed as blocks */
+}
+
+.social-media .social-websites:hover {
+  color: #0B132B;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+
+
+}
+
+#menu-btn {
+  color: rgb(25, 183, 245);
+  width: 3rem;
+  padding: 6px;
+  text-align: center;
+  border: 1px solid rgb(25, 183, 245);
+  margin-left: 3px;
+  display: none;
+
+}
+
+
+.nav-divupper {
+  display: flex;
+}
+
+.nav-div1 a,
+.nav-div1 button {
+  color: #ffffff;
+  /* Example text color */
+  text-decoration: none;
+  /* Remove underline from links */
+  margin-left: 9px;
+}
+
+/* Example margin for spacing */
+
+
+
+
+.navbar {
+  border: 0.0000001px solid rgba(167, 186, 243, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+
+
+.logo {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #ffffff;
+  /* Additional styles for logo */
+}
+
+.nav-button {
+  color: #ffffff;
+  border: none;
+  background-color: rgb(28, 182, 243);
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 11px 9px;
+  border-radius: 3px;
+  margin-left: 10px;
+  height: 2.5rem;
+  margin-top: 4px;
+  align-items: center;
+
+}
+
+
+.nav-button:hover {
+  background-color: rgb(114, 214, 253);
+  /* Lighter blue background on hover */
+  color: #ffffff;
+  /* White text color on hover */
+  transition: all 5s ease-out;
+  /* Smooth transition for all properties */
+  font-family: 'Nunito', sans-serif;
+  /* Font family */
+  font-weight: 600;
+  /* Font weight */
+}
+
+.serach-icon {
+  margin-right: 1px;
+  padding: 13px;
+  font-size: medium;
+  color: rgb(21, 183, 247);
+}
+
+/* General styling for the navigation bar */
+.nav-div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 519px;
+  /* Adjust width as needed */
+  margin-right: -10px;
+  /* Adjust margin as needed */
+  font-size: large;
+  /* Adjust font size as needed */
+  position: relative;
+  /* Ensure relative positioning for pseudo-element */
+
+}
+
+/* Styling for anchor tags within nav-div1 */
+.nav-div1 a {
+  position: relative;
+  /* Ensure pseudo-element is positioned relative to the link */
+  color: #ffffff;
+  /* Text color for links */
+  text-decoration: none;
+  /* Remove default underline */
+  margin-left: 9px;
+  /* Adjust margin between links */
+  padding-bottom: 5px;
+  /* Space for the underline */
+  transition: color 0.3s ease;
+  /* Smooth transition for text color */
+  padding: 10px;
+}
+
+/* Pseudo-element for creating the underline */
+.nav-div1 a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  /* Position the underline just above the border */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* Thickness of the underline */
+  background-color: transparent;
+  /* Initial transparent color */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for color change */
+}
+
+/* Hover effect for anchor tags */
+.nav-div1 a:hover {
+  color: var(--highlight-color);
+  /* Text color change on hover */
+}
+
+/* Hover effect for underline on anchor tags */
+.nav-div1 a:hover::after {
+  background-color: var(--highlight-color);
+  /* Color of the underline on hover */
+}
+
+/* Additional hover effect for navbar bottom border */
+.nav-div1:hover {
+  border-bottom-color: var(--highlight-color);
+  /* Color of bottom border on hover */
+}
+
+.icon-btn {
+  display: flex;
+}
+
+.drop-down {
+  display: flex;
+
+}
+
+/* ----------------------------hero section------------------------------------------------------------------------------------- */
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 69vh;
+  /* Make the container take up the full viewport height */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(11, 19, 43, 0.7);
+
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+.main-img {
+
+
+  display: block;
+
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensure the image covers the entire container */
+}
+
+.hero-section {
+  background-color: transparent;
+  box-shadow: transparent;
+  border-radius: 8px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: absolute;
+  /* Change to absolute positioning */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Center the element */
+  z-index: 2;
+  max-width: 900px;
+  /* Ensure the hero section doesn't exceed this width */
+  width: 90%;
+  /* Ensure responsiveness */
+  color: white;
+}
+
+.h5,
+h5 {
+  font-size: 1rem;
+}
+
+.h1,
+h1 {
+  font-size: calc(3.375rem + 1.5vw);
+} 
+
+
+.services {
+  margin-top: 38px;
+  }
+  
+  .Our-Services {
+    width: 100%;
+    padding: 39px;
+  
+  }
+  
+  .Our-Services-upper {
+    padding: 0px 58px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers child elements horizontally */
+  }
+  
+  .Services-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the boxes horizontally */
+    gap: 20px;
+    /* Even spacing between boxes */
+    padding: 20px;
+    /* Optional padding around the group of boxes */
+  }
+  
+  .services-small-box {
+    background-color: rgb(193, 226, 226);
+    display: flex;
+    flex-direction: column;
+    /* Align items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: space-around;
+    /* Evenly space items vertically */
+    width: 306px;
+    height: 306px;
+    /* Fixed height to match width */
+    margin: 10px;
+    /* Add some space around each box */
+    box-sizing: border-box;
+    /* Include padding and border in width and height */
+    text-align: center;
+    /* Center text inside each box */
+    padding: 20px;
+    /* Optional padding inside each box */
+  
+  }
+  
+  .service-font {
+    background-color: #1CB6F3;
+    width: 62px;
+    padding: 20px;
+    border-radius: 3px;
+    transform: rotate(45deg);
+  }
+  
+  .service-font i {
+    transform: rotate(318deg);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------maedia query ----------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  /* Adjust padding for medium-sized screens */
+  .testimonial-section {
+      padding: 30px; /* Reduce padding */
+  }
+  .swiper-slide {
+    width: calc(100% / 2); /* Each slide takes up 1/2 of the container */
+}
+
+}
+@media (max-width:1007px) {
+    .choose-upper {
+      padding: 0px;
+    }
+  
+  }
+  
+  @media (max-width:976px) {
+    .first-div {
+      display: none;
+      transform: scale(0);
+      opacity: 0;
+    }
+  
+    .nav-button {
+      display: block;
+      height: 5.5rem;
+      width: 79px;
+      padding: 0px 4px;
+    }
+  
+    .serach-icon {
+  
+      padding: 9px;
+      padding-top: 38px;
+      margin-right: 0px;
+    }
+  
+    #menu-btn {
+      display: none;
+    }
+    .ending-boxes-sec{
+      display: flex;
+      flex-direction: column;
+    }
+    .Our-Ending-startup {
+      width: 39%;
+   
+      padding-top: 283px;
+      font-size: 17px;
+    }
+    .footer{
+      padding: 16px 11px;
+      padding-left: 391px;
+      
+    }
+    .footer-inner {
+      gap: 0px;
+    }
+    .footer-inner-b{
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 968px) {
+    .boxes {
+      display: flex;
+      flex-direction: column;
+      display: block;
+      max-width: 742px;
+      /* top: 969px */
+      top: 160%;
+    }
+  
+    .about {
+      margin-top: 645px;
+    }
+  
+    .pricing-boxes {
+      flex-direction: column;
+  
+    }
+  
+    .pric-box1,
+    .pric-box2 {
+      width: 83%;
+    }
+  
+    .pric-btn {
+      align-self: flex-start;
+    }
+  
+    .pric-content {
+      justify-content: flex-start;
+  
+    }
+  
+    .pric-box1 {
+  
+      text-align: left;
+    }
+  
+    .pric-box2 {
+  
+  
+  
+      text-align: left;
+    }
+    .Request-Us-Quote {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  
+    .team-row {
+      display: flex;
+      flex-direction: column;
+    }
+    .Blog-boxes {
+      display: flex;
+      flex-direction: column;
+    }
+    .Blog-pricing-container {
+      width: 52%;
+      padding: 0px;
+      margin: 0px auto;
+  }
+  }
+  
+  @media (max-width:932px) {
+    .ending-boxes{
+      flex-direction: column;
+      padding: 0px 34px;
+    }
+  
+      .Our-Ending-startup {
+        width: 100%;
+          padding-top: 0px;
+          font-size: 1rem;
+          margin-bottom: 0px;
+      }
+      .Our-Ending-links {
+        padding: 0px;}
+        .footer {
+          padding: 0px 0px;
+          padding-left: 34px;
+      }
+  }
+  
+  
+  
+  
+  @media (max-width: 887px) {
+    .navbar {
+      background-color: white;
+      border: none;
+    }
+  
+    .logo {
+      color: #1CB6F3;
+    }
+  
+    #menu-btn {
+      display: block;
+    }
+  
+    .nav-div1 {
+      display: flex;
+      flex-direction: column;
+      width: 5rem;
+      align-items: flex-start;
+    }
+  
+  
+    .nav-divupper {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-divupper.open {
+      display: flex;
+    }
+  
+    .nav-div1 a {
+      font-weight: 600;
+      display: flex;
+      flex-direction: row;
+      color: #0B132B;
+      padding: 10px 0;
+    }
+  
+    .nav-button {
+      height: 5.5rem;
+      width: 200px;
+      padding: 0px 4px;
+      color: #ffffff;
+      border: none;
+      background-color: rgb(28, 182, 243);
+      font-size: 0.9rem;
+      display: inline-block;
+      padding: 11px 9px;
+      border-radius: 3px;
+      margin-left: 10px;
+      height: 2.5rem;
+      margin-top: 4px;
+      align-items: center;
+    }
+  
+    .serach-icon {
+      padding: 14px;
+      padding-top: 10px;
+    }
+  
+    .about-us {
+      display: flex;
+      flex-direction: column;
+      padding: 39px;
+  
+    }
+    .four-blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+  
+    .boxes-a1 {
+      flex-direction: column;
+    }
+    .Our-Vendors {
+      width: 90%;
+      padding: 39px;
+      padding-left: 70px;
+      
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+    }
+    .nav-div1 a{
+      padding: 5px 0px;
+    }
+    .nav-div1 > div .dropdown-content-1{
+font-size: 14px;
+    }
+    .nav-div1{
+      font-size: 16px;
+    }
+
+
+
+
+      .nav-divupper {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .nav-divupper.open {
+        display: flex;
+      }
+    
+    
+    }
+  
+  
+  @media (max-width:783px) {
+    .services-small-box {
+      width: 539px;
+      height: 236px;
+    }
+    .Blog-pricing-container {
+      width: 52%;
+      padding: 0px;
+      margin: 0px auto;
+  }
+  .hero-section h1{
+    font-size: 37px;
+  }
+  .hero-btn1, .hero-btn2{
+    font-size: 14px;
+    padding: 3px 14px;
+  }
+  }
+    /* Media Queries for responsiveness */
+    @media (max-width: 769px) {
+      .carousel-container {
+        height: 75vh; /* Adjust height for medium screens */
+      }
+      .boxes{
+        top: 125%;
+      }
+      
+    }
+    @media (max-width: 768px) {
+      /* Adjust padding for small screens */
+      .testimonial-section {
+          padding: 20px; /* Further reduce padding */
+      }
+    
+      /* Adjust slide width for small screens */
+      .swiper-slide {
+          width: 100%; /* Each slide takes full width */
+      }
+    
+      /* Optional: Adjust image size for smaller screens */
+      .testimonial-img img {
+          width: 50px; /* Smaller image size */
+          height: 50px; /* Smaller image size */
+      }
+    }
+    
+
+
+
+
+  @media (max-width:687px) {
+    .Blog-pricing-container {
+      width: 82%;
+      padding: 0px;
+      margin: 0px auto;
+    }
+  }
+  @media (max-width:593px) {
+  .Our-Vendors {
+    width: 90%;
+    padding: 39px;
+    padding-left: 70px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .footer {
+    padding: 0px 0px;
+    padding-left: 34px;
+    font-size: 9px;
+  }
+  }
+  @media (max-width: 480px) {
+    .carousel-container {
+      height: 50vh; /* Adjust height for small screens */
+    }
+    .hero-section h1 {
+      font-size: 20px;
+  }
+  .hero-section h5 {
+    font-size: 9px;
+  }
+  .hero-section{
+    margin-top: 23px;
+  }
+  .boxes {
+    top: 101%;
+  
+  
+  }
+  .about {
+    margin-top: 620px;}
+    .nav-div1 > div .dropdown-content-1{
+      font-size: 14px;
+          }
+           
+
+    /* Extra small screens */
+    .testimonial-section {
+        padding: 15px; /* Minimal padding */
+    }
+  
+    /* Adjust slide width for extra small screens */
+    .swiper-slide {
+        width: 100%; /* Each slide takes full width */
+    }
+  
+    /* Optional: Adjust font sizes for smaller screens */
+    .testimonial-content-upper h4 {
+        font-size: 1.2em; /* Smaller font for client name */
+    }
+  
+    .testimonial-content-upper h5 {
+        font-size: 1em; /* Smaller font for profession */
+    }
+    .logo {
+      font-size: 1.5rem;
+  }
+  .nav-div1{
+    font-size: 15px;
+  }
+  .carousel-container{
+    height: 57vh;
+  }
+  .nav-div1 > div .dropdown-content-1{
+    font-size: 11px;
+
+  }
+
+  }
+  
+  @media (max-width:375px) {
+    .service-font{
+      width: 34px;
+      padding: 6px;
+    }
+    .Services-box{
+      padding: 0px;
+    }
+    
+   
+  }
+  @media (max-width:335px) {
+  
+    .about-us h2{
+  font-size: 25px;
+    }
+    .Request-Us-upper h2{
+      font-size: 25px;
+        }
+    .price-currency {
+      font-size: 0.5em;
+      /* Smaller font size */
+  
+    }
+  
+    .price-period {
+      font-size: 0.3em;
+  
+    }
+  
+    .pric-box1-b h2 {
+      font-size: 27px;
+    }
+    .Request-Us-block-a{
+      display: flex;
+      flex-direction: column;
+    }
+    .Request-major-form{
+      padding: 0px;
+    }
+    .service-font {
+      width: 37px;
+      padding: 7px;}
+      .services-small-box{
+        padding: 0px;}
+  }
+  
+  
+  @media (max-width:307px) {
+    .hero-section h1 {
+      font-size: 40px;
+    }
+  
+    .hero-section h5 {
+      font-size: 10px;
+    }
+    .footer {
+      padding: 0px 0px;
+      padding-left: 34px;
+      font-size: 5px;
+    }
+    .services-small-box{
+      padding: 6px;
+      justify-content: center;
+    }
+    .service-font{
+      
+        width: 29px;
+        padding: 3px;
+    
+  
+  }
+  .services-small-box h4{
+    margin: 21px;
+    font-size: 16px;
+  }
+  .Our-Services{
+    padding: 10px;
+  }
+  
+  .blank-div{
+    width: 96px;
+  }
+  .blank-div-2{
+    width: 106px;
+    margin-top: 9px;
+  }
+  .about-us{
+    padding: 19px;
+  }
+  .choose{
+    padding: 19px;
+  }
+  .Our-pricing{
+    padding: 3px;
+  }
+  .Request-Us-Quote{
+    padding: 10px;
+  }
+  .ending-boxes{
+    padding: 0px;
+  }
+  .hero-section h1 {
+    font-size: 16px;
+  }
+  .hero-section h5 {
+  font-size: 6px;
+  }
+  .hero-section{
+    margin-top: 30px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  #menu-btn{
+    margin-left: 0px;
+    padding: 3px;
+    width: 1.5rem;
+  }
+  .navbar{
+    padding-left: 14px;
+  }
+  .nav-div1 > div .dropdown-content-1{
+    font-size: 9px;
+
+  }
+  .nav-div1 a{
+    padding: 4px 0;
+  }
+
+  }
+    
+  @media (max-width:276px) {
+    .contactpage-phone-num h5{
+    font-size: 16px;
+    }
+    .contactpage-phone-num h4{
+        font-size: 14px;
+        }
+       
+    
+    }
+  
+  
+  
+  @media (max-width:256px) {
+
+    .font-div,.font-div-2 {
+      margin: 8px;
+    }
+    .inner-content h4,h2{
+      font-size: 11px;
+    }
+    .inner-content2 h4,h2{
+      font-size: 11px;
+    }
+  .team-location-social-media a {
+   
+   
+  
+    font-size: 15px;
+   
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  
+    background-color: #1CB6F3;
+    padding: 7px;
+  }
+  .Our-Vendors {
+    width: 90%;
+    padding: 20px;
+    padding-left: 35px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .services-small-box p{
+    font-size: 13px;
+  }
+  .hero-section h1 {
+    font-size: 12px;
+  }
+  .hero-section h5 {
+  font-size: 5px;
+  }
+  .hero-section{
+  margin-top: 35px;
+  padding: 2px;
+  }
+  .boxes {
+    top: 80%;
+  }
+  .nav-button{
+    font-size: 0.6rem;
+  }
+}
+  
+  
+  
+  
+  @media (max-width:226px) {
+    .hero-section h1 {
+      font-size: 5px;
+    }
+    .hero-section h5 {
+    font-size: 2px;
+    }
+    .hero-section{
+    margin-top: 75px;
+    padding: 5px;
+    }
+    .hero-btn1, .hero-btn2{
+      margin-top: 6px;
+      font-size: 14px;
+      padding: 1px 13px;
+    }
+   
+  }
+  
+  
+  
+  
+
+  
+  
